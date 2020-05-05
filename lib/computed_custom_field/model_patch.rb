@@ -6,8 +6,6 @@ module ComputedCustomField
       before_validation :eval_computed_fields
     end
 
-    private
-
     def eval_computed_fields
       custom_field_values.each do |value|
         next unless value.custom_field.is_computed?
