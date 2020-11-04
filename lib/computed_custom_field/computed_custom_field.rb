@@ -5,6 +5,7 @@ module ComputedCustomField
       TimeEntry, User, Version
     ]
     models << Expense if defined?(Expense)
+    models << Subexpense
     models << Invoice if defined?(Invoice)
     models << InvoicePayment if defined?(InvoicePayment)
     models << InvoiceLine if defined?(InvoiceLine)
